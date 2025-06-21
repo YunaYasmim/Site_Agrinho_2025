@@ -1,49 +1,238 @@
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #333;
-  background-color: #fdfdfd;
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
+html {
+  /*font-family: 'Dancing Script' cursive;*/
 }
 
-header {
-  background-color: #a8d5ba;
-  padding: 20px;
-  text-align: center;
+.pop {
+  font-family: 'Poppins', sans-serif;
 }
 
-header h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.container {
+  width: 90%;
+  max-width: 1120px;
+  background-color: green;
+  margin: 0 auto;
 }
 
-nav ul {
-  list-style: none;
+.flex {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+/* Header */
+header {
+  padding: 27px 0
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.logo spam {
+  color: #80BA4A;
+}
+.header_menu li {
+  margin-left: 40px;
+}
+.header_menu li a {
+  transition: 0.3s;
+}
+.header_menu li a:hover {
+ color: #80BA4A;
+  transition: 0.3s;
 }
 
-main {
-  padding: 2rem;
+@media only screen and (max-width:768px) {
+  header.container {
+    justify-content: center;
+  }
+  .header_menu li {
+    margin: 20 16px 0;
+  }
 }
 
-section {
-  margin-bottom: 3rem;
+/* Main */
+#hero {
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
 }
 
-footer {
-  background-color: #eee;
+#hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero_inner {
+  z-index: 2;
+  color: #ffffff;
+  width: 100%;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+}
+
+.hero_inner p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero_inner h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width:768px) {
+
+
+}
+
+/*concept*/
+#concept {
+  margin-bottom: 120px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #80BA4A;
+  margin-bottom: 40px;
+}
+#concept h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  }
+.column-2 {
+  width: 48%;
+  }
+.text {
+  line-height: 2;
+}
+.concept-img {
+  background-image: url(../images/concept.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 20px;
+}
+.heading {
+  font-family: 'Dancing Script cursive';
+  font-size: 200px;
+  font-weight: 700;
+  color: #80BA4A;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-30%);
+  z-index: -1;
+}
+
+/* service */
+#service {
+  margin-bottom: 120px;
+}
+
+.service_inner {
+  margin-bottom: 40px;
+}
+
+.column-40 {
+  width: 40%;
+}
+
+.column-55 {
+  width: 55%;
+}
+
+#service img {
+  border-radius: 20px;
+}
+
+#service h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* company_info */
+#company {
+  margin-bottom: 120px;
+}
+
+#company dl {
+  max-width: 900px;
+  margin-left: auto;
+}
+
+#company dt {
+  width: 30%;
+  padding: 48px 0;
+  font-weight: 500;
+  border-bottom: solid 1px #D2ECBA;
+}
+
+#company dd {
+  width: 70%;
+  padding: 48px 0;
+  border-bottom: solid 1px #D2ECBA;
+}
+
+/* homepage */
+.column-a {
+  background-image: url(../images/bottom1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+.column-b {
+  background-image: url(../images/bottom2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+.column-c {
+  background-image: url(../images/bottom3.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+.column-d {
+  background-image: url(../images/bottom4.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+/* rodape */
+footer {
+  text-align: center;
+  margin: 90px 0;
+}
+.copyright {
+  font-size: 12px;
 }
