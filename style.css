@@ -1,10 +1,8 @@
 html {
-  /*font-family: 'Dancing Script' cursive;*/
-}
+  font-family: 'Noto Sans JP', sans-serif;
+  }
 
-.pop {
-  font-family: 'Poppins', sans-serif;
-}
+.pop {font-family: 'Poppins', sans-serif;}
 
 .container {
   width: 90%;
@@ -48,7 +46,7 @@ header {
     justify-content: center;
   }
   .header_menu li {
-    margin: 20 16px 0;
+    margin: 20px 16px 0;
   }
 }
 
@@ -240,7 +238,7 @@ header {
   background-image: url(../images/bottom2.jpg);
   background-position: center;
   background-size: cover;
-  width: 24%;
+  width: 18%;
   height: 270px;
   border-radius: 20px;
 }
@@ -258,7 +256,7 @@ header {
   background-image: url(../images/bottom4.jpg);
   background-position: center;
   background-size: cover;
-  width: 24%;
+  width: 28%;
   height: 270px;
   border-radius: 20px;
 }
@@ -278,4 +276,5 @@ footer {
 }
 .copyright {
   font-size: 12px;
+  margin-top: 40px;
 }
